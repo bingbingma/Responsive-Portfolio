@@ -31,17 +31,19 @@
           <!--Float Header your name left-->
           <h2 class="title"><strong>David Ma</strong></h2>
         </header>
-        <nav id="right">
+        <nav class="topnav" id="myTopnav right">
           <!-- Float links About Portfolio Contact right-->
           <a href="index.html">About</a> <span class="grey">|</span>
           <a href="portfolio.html">Portfolio</a> <span class="grey">|</span>
           <a href="contact.html">Contact</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
         </nav>
       </div>
     </div>
 
     <!-- SUBHEADING AND CONTENT SECTION -->
-    <section id="aboutme" class="clearfix">
+    <section class="clearfix aboutme">
       <h2 id="subheading"><strong>About Me</strong></h2>
 
       <div id="line"></div>
@@ -87,5 +89,17 @@
 
     <!-- FOOTER -->
     <footer><span class="bottom">Copyright &copy;</span></footer>
+ 
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+ 
   </body>
 </html>
