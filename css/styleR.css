@@ -200,10 +200,36 @@ footer {
   #content,
   #line,
   #subheading {
-    width: 100%;
+    width: 80%;
   }
 }
 
+@media (max-width: 768px) {
+  .topheading,
+  .aboutme,
+  .bottom,
+  #content,
+  #line,
+  #content,
+  #line,
+  #subheading {
+    width: 95%;
+  }
+}
+
+@media (max-width: 640px) {
+  .topheading,
+  .aboutme,
+  .bottom,
+  #content,
+  #line,
+  #content,
+  #line,
+  #subheading {
+    width: 98%;
+  }
+}
+/* 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -228,7 +254,7 @@ footer {
     display: block;
     text-align: left;
   }
-}
+} */
 /* 
 @media (max-width: 768px) {
   .topheading {
